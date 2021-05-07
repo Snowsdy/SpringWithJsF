@@ -1,6 +1,6 @@
 package fr.snowsdy.app.bean;
 
-import fr.snowsdy.app.service.BeerService;
+import fr.snowsdy.app.client.service.BeerService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;
@@ -27,9 +27,5 @@ public class BeerBean implements Serializable {
 
     public String helloSpring(){
         return beerService.sayHello();
-    }
-
-    public void end(){
-        beerService.end();
     }
 }

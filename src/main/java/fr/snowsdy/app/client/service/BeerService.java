@@ -1,6 +1,6 @@
-package fr.snowsdy.app.service;
+package fr.snowsdy.app.client.service;
 
-import fr.snowsdy.app.entity.Beer;
+import fr.snowsdy.app.metier.entity.Beer;
 import fr.snowsdy.app.physique.BeerServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,7 +40,7 @@ public abstract class BeerService implements Serializable {
     }
 
     @GetMapping("/end")
-    public void end() {
+    public void endBeer() {
         System.exit(0);
     }
 
@@ -50,12 +50,12 @@ public abstract class BeerService implements Serializable {
         return beerServiceImpl.searchByPrice(min, max);
     }
 
-    @GetMapping("/all")
+    @GetMapping("/allBeers")
     public @ResponseBody Iterable<Beer> getAllBeers(){
         return beerServiceImpl.getAll();
     }
 
-    @GetMapping("/test")
+    @GetMapping("/testBeer")
     public String test(){
         return beerServiceImpl.test();
     }

@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e50041d3-d8de-4285-89c9-24006d55384c" name="Default Changelist" comment="" />
+    <list default="true" id="e50041d3-d8de-4285-89c9-24006d55384c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/bean/PersonneBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/client/service/PersonneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/metier/entity/Personne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/physique/PersonneServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/physique/repository/PersonneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWithJsf.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/bean/BeerBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/bean/BeerBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/entity/Beer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/metier/entity/Beer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/physique/BeerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/physique/BeerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/repository/BeerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/physique/repository/BeerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/service/BeerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/client/service/BeerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/snowsdy/app/bean/BeerBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/snowsdy/app/bean/BeerBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/snowsdy/app/entity/Beer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/snowsdy/app/physique/BeerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/snowsdy/app/physique/BeerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/snowsdy/app/repository/BeerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/snowsdy/app/service/BeerService.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -21,7 +42,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pfmaBSHmc2lyCja4fgmsuFGl5u" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,6 +58,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">

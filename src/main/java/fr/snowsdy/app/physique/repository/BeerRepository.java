@@ -1,6 +1,6 @@
-package fr.snowsdy.app.repository;
+package fr.snowsdy.app.physique.repository;
 
-import fr.snowsdy.app.entity.Beer;
+import fr.snowsdy.app.metier.entity.Beer;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;

@@ -1,4 +1,4 @@
-package fr.snowsdy.app.entity;
+package fr.snowsdy.app.metier.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;

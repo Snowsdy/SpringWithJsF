@@ -1,8 +1,8 @@
 package fr.snowsdy.app.physique;
 
-import fr.snowsdy.app.entity.Beer;
-import fr.snowsdy.app.repository.BeerRepository;
-import fr.snowsdy.app.service.BeerService;
+import fr.snowsdy.app.metier.entity.Beer;
+import fr.snowsdy.app.physique.repository.BeerRepository;
+import fr.snowsdy.app.client.service.BeerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
