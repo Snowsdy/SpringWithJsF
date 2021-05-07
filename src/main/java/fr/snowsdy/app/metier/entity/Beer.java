@@ -12,7 +12,7 @@ public class Beer implements Serializable {
 
     // Attributs :
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;            // Id
     private String name;        // Nom de la bière
     private float price;         // Prix de la bière
