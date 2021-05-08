@@ -23,14 +23,7 @@ public class ApiRestFull implements Serializable {
     AuditServiceImpl auditServiceImpl;
     // C'est un succès ;)
 
-    public static final String template = "Personne %s";
-    public static final String springMessage = "Spring Service";
-
     public ApiRestFull() {
-    }
-
-    public String sayHello() {
-        return springMessage;
     }
 
     @GetMapping("/Personne/getAll")
