@@ -1,10 +1,11 @@
 package fr.audit.app.metier.modele;
 
-import fr.audit.app.metier.entity.Image;
-import fr.audit.app.metier.entity.Section;
-
+iimport java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import metier.entity.Image;
+import metier.entity.Section;
+import metier.model.ChampM;
 
 
 /**
@@ -20,7 +21,11 @@ public class SectionM {
     private Image image;
 
     public SectionM(){
-
+        this.nom = new String();
+        this.image = new Image();
+        List<ChampM> c;
+        c = new ArrayList<>();
+        this.champs = c;
     }
 
     public SectionM(Section s) {
@@ -28,7 +33,9 @@ public class SectionM {
         this.nom = s.getNom();
         this.type = s.getType();
         this.image = s.getImage();
-        this.champs = null;
+        List<ChampM> c;
+        c = new ArrayList<>();
+        this.champs = c;
     }
 
 

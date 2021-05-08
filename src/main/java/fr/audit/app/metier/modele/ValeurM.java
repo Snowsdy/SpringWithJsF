@@ -6,10 +6,14 @@ import java.util.Objects;
  *
  * @author evanbaillieu
  */
-public class ValeurM {
+public class ValeurM
+{
     private long id;
     private String valeur;
     private int type;
+
+    public ValeurM() {
+    }
 
     public ValeurM(long id, String valeur, int type) {
         this.id = id;
@@ -81,4 +85,5 @@ public class ValeurM {
 
 
 
+}
 }

@@ -1,7 +1,12 @@
 package fr.audit.app.metier.modele;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import metier.entity.Champ;
+import metier.entity.Modele;
+import metier.entity.Section;
+import metier.model.SectionM;
 /**
  *
  * @author bob
@@ -12,11 +17,40 @@ public class ModeleM {
     private int niveau;
     private List<SectionM> sections;
 
+    public ModeleM() {
+        List<SectionM> s;
+        s = new ArrayList<>();
+        this.sections = s;
+    }
+
     public ModeleM(long id, String type, int niveau, List<SectionM> sections) {
         this.id = id;
         this.type = type;
         this.niveau = niveau;
         this.sections = sections;
+    }
+
+    public ModeleM(Modele m) {
+        this.id = m.getId();
+        this.niveau = m.getNiveau();
+        this.type = m.getType();
+        List<SectionM> s = new ArrayList();
+        for(Section sec: m.getSections()){
+            SectionM sect = new SectionM();
+            sect.setId(sec.getId());
+            sect.setImage(sec.getImage());
+            sect.setNom(sec.getNom());
+            List<ChampM> c = new ArrayList();
+            for(Champ ch: sec.getChamps()){
+                ChampM champ = new ChampM();
+                champ.setId(ch.getId());
+                champ.setNom(ch.getNom());
+                c.add(champ);
+            }
+            sect.setChamps(c);
+            s.add(sect);
+        }
+        this.sections = s;//To change body of generated methods, choose Tools | Templates.
     }
 
     public long getId() {

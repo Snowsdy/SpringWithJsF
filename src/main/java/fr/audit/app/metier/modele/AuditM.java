@@ -1,8 +1,16 @@
 package fr.audit.app.metier.modele;
-import fr.audit.app.metier.entity.*;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
+import metier.entity.Agent;
+import metier.entity.Audit;
+import metier.entity.Auditeur;
+import metier.entity.Champ;
+import metier.entity.Modele;
+import metier.entity.Poste;
+import metier.entity.Section;
+import metier.entity.Valeurs;
 
 /**
  *
@@ -18,19 +26,26 @@ public class AuditM {
     private ModeleM modele;
     private String title;
 
-    public void parsedto(Audit a){
+    public AuditM() { //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public AuditM(Audit a){
         this.id = a.getId();
         this.agent = a.getAgent();
         this.poste = a.getPoste();
         this.auditeurs = a.getAuditeurs();
         this.date = a.getDate();
-        this.modele.setId(a.getModele().getId());
-        this.modele.setNiveau(a.getModele().getNiveau());
-        this.modele.setType(a.getModele().getType());
-        a.getModele().getSections().forEach((s) -> {
+        this.title = a.getTitre();
+
+        ModeleM m;
+        m = new ModeleM();
+        m.setId(a.getModele().getId());
+        m.setNiveau(a.getModele().getNiveau());
+        m.setType(a.getModele().getType());
+        for(Section s: a.getModele().getSections()){
             SectionM se = new SectionM(s);
             int i = 0;
-            if (se.getChamps() == null) {
+            if (se.getChamps() != null) {
                 for(Champ c: s.getChamps()){
                     i = 0;
                     for(Valeurs v: a.getValeurs()){
@@ -50,8 +65,9 @@ public class AuditM {
                     }
                 }
             }
-            this.modele.addSections(se);
-        });
+            m.addSections(se);
+        }
+        this.modele = m;
     }
 
 
@@ -63,14 +79,6 @@ public class AuditM {
         this.date = date;
         this.modele = modele;
         this.title = title;
-    }
-
-    public AuditM(Audit audit){
-        this.id = audit.getId();
-        this.agent = audit.getAgent();
-        this.poste = audit.getPoste();
-        this.auditeurs = audit.getAuditeurs();
-        this.date = audit.getDate();
     }
 
     public long getId() {
@@ -129,17 +137,6 @@ public class AuditM {
         this.title = title;
     }
 
-    public Audit getAudit(){
-        Audit a = new Audit();
-        a.setDate(this.date);
-        a.setId(this.id);
-        a.setPoste(this.poste);
-        a.setAgent(this.agent);
-        a.setTitre(this.title);
-
-        return a;
-    }
-
     @Override
     public int hashCode() {
         int hash = 5;
@@ -193,6 +190,7 @@ public class AuditM {
 
     public Audit toAudit(){
         Audit a = new Audit();
+        a.setId(this.id);
         a.setAgent(this.agent);
         a.setAuditeurs(this.auditeurs);
         a.setDate(this.date);
@@ -203,15 +201,15 @@ public class AuditM {
         m.setNiveau(this.modele.getNiveau());
         m.setObsolete(false);
         m.setType(this.modele.getType());
-        List<Section> s = null;
-        List<Valeurs> v = null;
+        List<Section> s = new ArrayList<>();
+        List<Valeurs> v = new ArrayList<>();
         for(SectionM sec: this.modele.getSections()){
             Section se = new Section();
             se.setId(sec.getId());
             se.setImage(sec.getImage());
             se.setNom(sec.getNom());
             se.setType(sec.getType());
-            List<Champ> ch = null;
+            List<Champ> ch = new ArrayList<>();
             for(ChampM champ: sec.getChamps()){
                 Champ c = new Champ();
                 Valeurs val = new Valeurs();

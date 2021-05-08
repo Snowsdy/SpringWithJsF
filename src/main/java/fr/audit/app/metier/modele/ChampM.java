@@ -1,8 +1,12 @@
-package fr.audit.app.metier.modele;
-
-import fr.audit.app.metier.entity.Valeurs;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package metier.model;
 
 import java.util.Objects;
+import metier.entity.Valeurs;
 
 /**
  *
@@ -17,9 +21,12 @@ public class ChampM {
     public ChampM(Valeurs v) {
         this.id = v.getChamp().getId();
         this.nom = v.getChamp().getNom();
-        this.valeurs.setId(v.getId());
-        this.valeurs.setType(v.getType());
-        this.valeurs.setValeur(v.getValeur());
+        ValeurM val;
+        val = new ValeurM();
+        val.setId(v.getId());
+        val.setType(v.getType());
+        val.setValeur(v.getValeur());
+        this.valeurs = val;
     }
 
     public ChampM() {
