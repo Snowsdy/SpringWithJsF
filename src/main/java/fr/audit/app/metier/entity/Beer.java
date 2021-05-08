@@ -3,9 +3,6 @@ package fr.audit.app.metier.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- * @author Snowsdy
- */
 @Entity
 @Table(name = "beers")
 public class Beer implements Serializable {

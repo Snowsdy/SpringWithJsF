@@ -1,4 +1,4 @@
-package fr.audit.app.bean;
+package fr.audit.app.primefaces.bean;
 
 import fr.audit.app.client.service.BeerService;
 import org.springframework.beans.factory.annotation.Autowired;

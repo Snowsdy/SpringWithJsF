@@ -13,9 +13,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.faces.webapp.FacesServlet;
 
-/**
- * @author Snowsdy
- */
 @SpringBootApplication
 @EnableJpaRepositories
 @EnableTransactionManagement

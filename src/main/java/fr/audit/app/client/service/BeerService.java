@@ -12,9 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * @author Snowsdy
- */
 @Service
 @RestController
 public abstract class BeerService implements Serializable {
