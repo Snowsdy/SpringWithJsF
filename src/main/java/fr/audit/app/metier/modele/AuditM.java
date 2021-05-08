@@ -1,16 +1,10 @@
 package fr.audit.app.metier.modele;
+
+import fr.audit.app.metier.entity.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
-import metier.entity.Agent;
-import metier.entity.Audit;
-import metier.entity.Auditeur;
-import metier.entity.Champ;
-import metier.entity.Modele;
-import metier.entity.Poste;
-import metier.entity.Section;
-import metier.entity.Valeurs;
 
 /**
  *
@@ -44,7 +38,7 @@ public class AuditM {
         m.setType(a.getModele().getType());
         for(Section s: a.getModele().getSections()){
             SectionM se = new SectionM(s);
-            int i = 0;
+            int i;
             if (se.getChamps() != null) {
                 for(Champ c: s.getChamps()){
                     i = 0;

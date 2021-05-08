@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e50041d3-d8de-4285-89c9-24006d55384c" name="Default Changelist" comment="Ajout du JPA des classes ;)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/AuditM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ChampM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ModeleM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/SectionM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ValeurM.java" afterDir="false" />
+    <list default="true" id="e50041d3-d8de-4285-89c9-24006d55384c" name="Default Changelist" comment="Ajout de GetByLogin &amp; Méthode pour convertir un / des Audit(s) en AuditM.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/ApiRestFull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/ApiRestFull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/AuditM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/AuditM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ChampM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ChampM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ModeleM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ModeleM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/SectionM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/SectionM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ValeurM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ValeurM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/AuthServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/PersonneServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/PersonneServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/PersonneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/PersonneRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +141,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MaJ de la classe Beer pour AI dans la bdd.&#10;En attente des autres entités..." />
     <MESSAGE value="Ajout du JPA des classes ;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout du JPA des classes ;)" />
+    <MESSAGE value="Ajout de GetByLogin &amp; Méthode pour convertir un / des Audit(s) en AuditM." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de GetByLogin &amp; Méthode pour convertir un / des Audit(s) en AuditM." />
   </component>
 </project>

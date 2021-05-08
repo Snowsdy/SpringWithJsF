@@ -5,6 +5,7 @@ import fr.audit.app.physique.repository.PersonneRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 @Service("persServiceImpl")
 public class PersonneServiceImpl {
 
@@ -12,6 +13,8 @@ public class PersonneServiceImpl {
     PersonneRepository personneRepository;
 
     public Iterable<Personne> getAll(){ return personneRepository.findAll();}
+
+    public Iterable<Personne> getByLogin(String login){ return personneRepository.getByLogin(login);}
 
     public String test(){ return personneRepository.test();}
 }

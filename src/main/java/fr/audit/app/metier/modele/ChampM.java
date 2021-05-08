@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package metier.model;
+package fr.audit.app.metier.modele;
+
+import fr.audit.app.metier.entity.Valeurs;
+import fr.audit.app.metier.modele.ValeurM;
 
 import java.util.Objects;
-import metier.entity.Valeurs;
 
 /**
  *
@@ -89,10 +91,7 @@ public class ChampM {
         if (!Objects.equals(this.nom, other.nom)) {
             return false;
         }
-        if (!Objects.equals(this.valeurs, other.valeurs)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.valeurs, other.valeurs);
     }
 
 }

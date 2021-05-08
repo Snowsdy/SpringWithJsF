@@ -72,10 +72,7 @@ public class ValeurM
         if (this.type != other.type) {
             return false;
         }
-        if (!Objects.equals(this.valeur, other.valeur)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.valeur, other.valeur);
     }
 
     @Override
@@ -85,5 +82,4 @@ public class ValeurM
 
 
 
-}
 }

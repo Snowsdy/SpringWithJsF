@@ -1,12 +1,12 @@
 package fr.audit.app.metier.modele;
 
+import fr.audit.app.metier.entity.Champ;
+import fr.audit.app.metier.entity.Modele;
+import fr.audit.app.metier.entity.Section;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import metier.entity.Champ;
-import metier.entity.Modele;
-import metier.entity.Section;
-import metier.model.SectionM;
 /**
  *
  * @author bob
@@ -120,10 +120,7 @@ public class ModeleM {
         if (!Objects.equals(this.type, other.type)) {
             return false;
         }
-        if (!Objects.equals(this.sections, other.sections)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.sections, other.sections);
     }
 
     @Override
