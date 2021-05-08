@@ -18,7 +18,7 @@ public class ApiRestFull implements Serializable {
     @Autowired
     PersonneServiceImpl persServiceImpl;
 
-    // Je tente de faire un seul RestController pour communiquer avec Personne & Audit :
+    // Je tente de faire un seul RestController pour le CRUD de Personne & Audit :
     @Autowired
     AuditServiceImpl auditServiceImpl;
     // C'est un succès ;)
