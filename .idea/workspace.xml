@@ -4,11 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e50041d3-d8de-4285-89c9-24006d55384c" name="Default Changelist" comment="">
+    <list default="true" id="e50041d3-d8de-4285-89c9-24006d55384c" name="Default Changelist" comment="Ajout du JPA des classes ;)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Agent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Audit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Auditeur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Champ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Modele.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Poste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Section.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Valeurs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/ChampServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/ImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/ModeleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/PosteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/SectionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/ValeursServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/ChampRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/ImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/ModeleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/PosteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/SectionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/ValeursRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/metier/entity/Beer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/metier/entity/Beer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/LaunchApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/LaunchApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/bean/BeerBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/bean/BeerBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/bean/PersonneBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/bean/PersonneBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/client/service/BeerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/BeerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/client/service/PersonneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/PersonneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/metier/entity/Beer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Beer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/metier/entity/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Personne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/physique/BeerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/BeerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/physique/PersonneServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/PersonneServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/physique/repository/BeerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/BeerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/snowsdy/app/physique/repository/PersonneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/PersonneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/snowsdy/app/LaunchApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/snowsdy/app/bean/BeerBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/snowsdy/app/physique/BeerServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +85,7 @@
   </component>
   <component name="RunManager">
     <configuration name="LaunchApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.snowsdy.app.LaunchApp" />
+      <option name="MAIN_CLASS_NAME" value="fr.audit.app.LaunchApp" />
       <module name="SpringWithJsf" />
       <extension name="coverage">
         <pattern>
@@ -80,6 +112,14 @@
       <option name="presentableId" value="Default" />
       <updated>1615582579712</updated>
     </task>
+    <task id="LOCAL-00001" summary="MaJ de la classe Beer pour AI dans la bdd.&#10;En attente des autres entités...">
+      <created>1620414445955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620414445955</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,5 +156,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MaJ de la classe Beer pour AI dans la bdd.&#10;En attente des autres entités..." />
+    <MESSAGE value="Ajout du JPA des classes ;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout du JPA des classes ;)" />
   </component>
 </project>
