@@ -1,15 +1,8 @@
 package fr.audit.app.metier.modele;
+import fr.audit.app.metier.entity.*;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
-import metier.entity.Agent;
-import metier.entity.Audit;
-import metier.entity.Auditeur;
-import metier.entity.Champ;
-import metier.entity.Modele;
-import metier.entity.Poste;
-import metier.entity.Section;
-import metier.entity.Valeurs;
 
 /**
  *
@@ -70,6 +63,14 @@ public class AuditM {
         this.date = date;
         this.modele = modele;
         this.title = title;
+    }
+
+    public AuditM(Audit audit){
+        this.id = audit.getId();
+        this.agent = audit.getAgent();
+        this.poste = audit.getPoste();
+        this.auditeurs = audit.getAuditeurs();
+        this.date = audit.getDate();
     }
 
     public long getId() {

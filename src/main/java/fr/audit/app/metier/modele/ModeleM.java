@@ -2,7 +2,6 @@ package fr.audit.app.metier.modele;
 
 import java.util.List;
 import java.util.Objects;
-import metier.model.SectionM;
 /**
  *
  * @author bob

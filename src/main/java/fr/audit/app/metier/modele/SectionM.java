@@ -1,11 +1,10 @@
 package fr.audit.app.metier.modele;
 
+import fr.audit.app.metier.entity.Image;
+import fr.audit.app.metier.entity.Section;
+
 import java.util.List;
 import java.util.Objects;
-import metier.entity.Champ;
-import metier.entity.Image;
-import metier.entity.Section;
-import metier.model.ChampM;
 
 
 /**

@@ -1,7 +1,8 @@
 package fr.audit.app.metier.modele;
 
+import fr.audit.app.metier.entity.Valeurs;
+
 import java.util.Objects;
-import metier.entity.Valeurs;
 
 /**
  *
