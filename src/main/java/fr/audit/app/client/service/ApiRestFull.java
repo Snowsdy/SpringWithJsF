@@ -8,6 +8,7 @@ import fr.audit.app.physique.PersonneServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.io.Serializable;
@@ -38,8 +39,8 @@ public class ApiRestFull implements Serializable {
     @GetMapping("/Personne/testPersonne")
     public String test(){ return persServiceImpl.test();}
 
-    @GetMapping("Personne/getById")
-    public Optional<Personne> getById(@RequestParam(value = "id") long id){ return persServiceImpl.getById(id);}
+    @GetMapping("/Personne/getById/{id}")
+    public Optional<Personne> getById(@PathVariable("id") long id){ return persServiceImpl.getById(id);}
 
     @GetMapping("/Personne/getByLogin")
     public Iterable<Personne> getByLogin(@RequestParam(value = "login") String login){ return persServiceImpl.getByLogin(login);}

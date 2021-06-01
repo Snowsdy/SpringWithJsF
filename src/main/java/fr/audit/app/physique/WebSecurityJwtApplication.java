@@ -1,4 +1,4 @@
-package fr.audit.app.physique;
+/*package fr.audit.app.physique;
 
 
 import fr.audit.app.physique.jwt.AuthEntryPointJwt;
@@ -64,3 +64,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
     }
 }
+*/

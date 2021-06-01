@@ -1,5 +1,7 @@
 package fr.audit.app.metier.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
@@ -25,6 +27,11 @@ public class Personne implements Serializable {
     private String login;
     private String password;
 
+    @Transient
+    @JsonProperty("class")
+    private String clazz = this.getClass().getCanonicalName();
+
+
     public Personne() {
     }
 
@@ -33,8 +40,8 @@ public class Personne implements Serializable {
         this.prenom = prenom;
         this.login = login;
         //this.password = this.codeMD5(password);
-//        this.password = password;
-        this.password = toHexString(getSHA(password));
+        this.password = password;
+       // this.password = toHexString(getSHA(password));
     }
 
     public long getId() {
@@ -65,8 +72,8 @@ public class Personne implements Serializable {
         return login;
     }
 
-    public void setPassword(String password) throws NoSuchAlgorithmException {
-        this.password = toHexString(getSHA(password));
+    public void setPassword(String password)  {
+        this.password = password;
     }
 
     //    public void setEncodedMdp(String password) throws NoSuchAlgorithmException {
