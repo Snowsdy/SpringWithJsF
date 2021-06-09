@@ -6,11 +6,13 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 
 @Repository("personneRepository")
 public interface PersonneRepository extends CrudRepository<Personne, Long> {
     default String test(){ return "Test Personne";}
 
     @Query("from Personne where login = :log")
-    Iterable<Personne> getByLogin(@Param("log") String log);
+    Optional<Personne> getByLogin(@Param("log") String log);
 }

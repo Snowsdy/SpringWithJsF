@@ -30,10 +30,25 @@ public class modeleControleur {
         }
     }
 
-    @GetMapping("/")
-    public ResponseEntity<List<Modele>> getAll(){
+    @GetMapping("/Modele/Count")
+    public ResponseEntity<Integer> getCountModele() {
         try {
-            List<Modele> modeles = new ArrayList<Modele>();
+            Integer count = 0;
+            Iterable<Modele> modeles = modeleRepository.findAll();
+            for (Modele modele : modeles) {
+                count++;
+            }
+            return new ResponseEntity<>(count, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/")
+    public ResponseEntity<List<Modele>> getAllModele(){
+        try {
+            List<Modele> modeles = new ArrayList<>();
+            modeleRepository.findAll().forEach(modeles::add);
             return new ResponseEntity<>(modeles, HttpStatus.OK);
         }catch (Exception e){
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);

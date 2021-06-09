@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e50041d3-d8de-4285-89c9-24006d55384c" name="Default Changelist" comment="jwt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/AuditControleur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/authControleur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/modeleControleur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/iter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/PersonneControleur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/ApiRestFull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/ApiRestFull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Personne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/WebSecurityJwtApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/WebSecurityJwtApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/jwt/AuthEntryPointJwt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/jwt/AuthTokenFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/jwt/JwtUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/AuditControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/AuditControleur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/modeleControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/modeleControleur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/iter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/AuditM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/AuditM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/payload/request/LoginResquest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/payload/request/LoginResquest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/PersonneServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/PersonneServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/PersonneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/PersonneRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -132,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620518292372</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="jwt">
+      <created>1622549628980</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622549628980</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

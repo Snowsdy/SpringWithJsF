@@ -187,7 +187,8 @@ public class AuditM {
         a.setId(this.id);
         a.setAgent(this.agent);
         a.setAuditeurs(this.auditeurs);
-        a.setDate(this.date);
+        //a.setDate(this.date);
+
         a.setPoste(this.poste);
         a.setTitre(this.title);
         Modele m = new Modele();

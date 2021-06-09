@@ -32,10 +32,10 @@ public class AuditControleur {
         }
     }
     @GetMapping("/")
-    public ResponseEntity<List<AuditM>> getAll(){
+    public ResponseEntity<List<AuditM>> getAllAudit(){
         try{
             Iterable<Audit> audits = auditRepository.findAll();
-            List<AuditM> auditMs = new ArrayList<AuditM>();
+            List<AuditM> auditMs = new ArrayList<>();
             audits.forEach((audit) -> {
                 AuditM aM = new AuditM(audit);
                 auditMs.add(aM);

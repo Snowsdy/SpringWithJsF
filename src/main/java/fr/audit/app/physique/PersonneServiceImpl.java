@@ -17,7 +17,7 @@ public class PersonneServiceImpl {
 
     public Optional<Personne> getById(long id){ return personneRepository.findById(id);}
 
-    public Iterable<Personne> getByLogin(String login){ return personneRepository.getByLogin(login);}
+    public Optional<Personne> getByLogin(String login){ return personneRepository.getByLogin(login);}
 
     public String test(){ return personneRepository.test();}
 }
