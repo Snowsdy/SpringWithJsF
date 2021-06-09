@@ -1,11 +1,10 @@
 package fr.audit.app.metier.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 import java.util.Objects;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Champ implements Serializable {
@@ -18,6 +17,10 @@ public class Champ implements Serializable {
     private String nom;
     private int nbValeurs;
     private int type; // 0 =String , 1=images
+
+    @Transient
+    @JsonProperty("class")
+    final String clazz = this.getClass().getCanonicalName();
 
     public Champ() {
     }
@@ -43,8 +46,6 @@ public class Champ implements Serializable {
         this.nbValeurs = nbValeurs;
         this.type = type;
     }
-
-
 
     public String getNom() {
         return nom;

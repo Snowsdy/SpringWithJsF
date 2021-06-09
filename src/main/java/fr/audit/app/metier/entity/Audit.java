@@ -1,16 +1,12 @@
 package fr.audit.app.metier.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.Temporal;
+import javax.persistence.*;
 
 @Entity
 public class Audit implements Serializable {
@@ -20,6 +16,10 @@ public class Audit implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JsonProperty("class")
+    @Transient
+    final String clazz = this.getClass().getCanonicalName();
+
     @OneToOne
     private Agent agent;
     @OneToOne
@@ -27,7 +27,7 @@ public class Audit implements Serializable {
     @OneToMany
     public List<Auditeur> auditeurs;
 
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(TemporalType.DATE)
     private Date date;
 
     @OneToOne

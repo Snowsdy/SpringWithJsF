@@ -53,10 +53,12 @@ public class AuditControleur {
     @PostMapping("/")
     public ResponseEntity<AuditM> createAudit(@RequestBody AuditM audit){
         try {
-            Audit a = auditRepository.save(audit.toAudit());
+            Audit a = audit.toAudit();
+            auditRepository.save(a);
             AuditM aud = new AuditM(a);
             return new ResponseEntity<>(aud, HttpStatus.CREATED);
         }catch(Exception e){
+            e.printStackTrace();
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
 

@@ -1,11 +1,10 @@
 package fr.audit.app.metier.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 import java.util.Objects;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Poste implements Serializable {
@@ -17,6 +16,10 @@ public class Poste implements Serializable {
     private String fonction;
     private String activite;
     private String emplacement;
+
+    @Transient
+    @JsonProperty("class")
+    final String clazz = this.getClass().getCanonicalName();
 
     public Poste() {
     }

@@ -184,10 +184,10 @@ public class AuditM {
 
     public Audit toAudit(){
         Audit a = new Audit();
-        a.setId(this.id);
+        a.setId(id);
         a.setAgent(this.agent);
         a.setAuditeurs(this.auditeurs);
-        //a.setDate(this.date);
+        a.setDate(this.date);
 
         a.setPoste(this.poste);
         a.setTitre(this.title);

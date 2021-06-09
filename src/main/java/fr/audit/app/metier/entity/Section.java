@@ -1,5 +1,7 @@
 package fr.audit.app.metier.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
@@ -17,6 +19,10 @@ public class Section implements Serializable {
     private int type; //0= strings , 1 = tableau, 2= image
 
     private int position;
+
+    @Transient
+    @JsonProperty("class")
+    final String clazz = this.getClass().getCanonicalName();
 
     @ElementCollection
     @OneToMany(orphanRemoval = true)

@@ -1,13 +1,11 @@
 package fr.audit.app.metier.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 @Entity
 public class Modele implements Serializable {
@@ -18,6 +16,10 @@ public class Modele implements Serializable {
     private long id;
 
     private String type;
+
+    @Transient
+    @JsonProperty("class")
+    final String clazz = this.getClass().getCanonicalName();
 
     private int niveau;
 
@@ -56,7 +58,7 @@ public class Modele implements Serializable {
         return sections;
     }
 
-    public void addSection(Section section) {
+    public void addSections(Section section) {
         this.sections.add(section);
 
     }

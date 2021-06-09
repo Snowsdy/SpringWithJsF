@@ -60,6 +60,15 @@ public class ChampM {
         return valeurs;
     }
 
+    @Override
+    public String toString() {
+        return "ChampM{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", valeurs=" + valeurs +
+                '}';
+    }
+
     public void setValeurs(ValeurM valeurs) {
         this.valeurs = valeurs;
     }

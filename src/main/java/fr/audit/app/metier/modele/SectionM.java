@@ -130,4 +130,14 @@ public class SectionM {
         this.image = image;
     }
 
+    @Override
+    public String toString() {
+        return "SectionM{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", type=" + type +
+                ", champs=" + champs +
+                ", image=" + image +
+                '}';
+    }
 }

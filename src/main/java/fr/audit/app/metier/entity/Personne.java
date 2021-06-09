@@ -31,11 +31,10 @@ public class Personne implements Serializable {
     @JsonProperty("class")
     private String clazz = this.getClass().getCanonicalName();
 
-
     public Personne() {
     }
 
-    public Personne(String nom, String prenom, String login, String password) throws NoSuchAlgorithmException {
+    public Personne(String nom, String prenom, String login, String password) {
         this.nom = nom;
         this.prenom = prenom;
         this.login = login;

@@ -1,11 +1,10 @@
 package fr.audit.app.metier.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Lob;
+import java.util.Arrays;
+import javax.persistence.*;
 
 
 @Entity
@@ -17,6 +16,10 @@ public class Image implements Serializable {
     private Long id;
 
     private String nom;
+
+    @Transient
+    @JsonProperty("class")
+    final String clazz = this.getClass().getCanonicalName();
 
     @Lob
     private byte[] image;
@@ -45,4 +48,13 @@ public class Image implements Serializable {
         this.image = image;
     }
 
+    @Override
+    public String toString() {
+        return "Image{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", clazz='" + clazz + '\'' +
+                ", image=" + Arrays.toString(image) +
+                '}';
+    }
 }

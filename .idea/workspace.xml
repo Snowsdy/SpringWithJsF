@@ -4,18 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e50041d3-d8de-4285-89c9-24006d55384c" name="Default Changelist" comment="jwt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/PersonneControleur.java" afterDir="false" />
+    <list default="true" id="e50041d3-d8de-4285-89c9-24006d55384c" name="Default Changelist" comment="Ajout Audit fonctionnel &amp; confirmée">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SpringWithJsf_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/ApiRestFull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/ApiRestFull.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/AuditControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/AuditControleur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/modeleControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/client/service/modeleControleur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/iter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Audit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Audit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Champ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Champ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Modele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Modele.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Personne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Poste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Poste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Valeurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/entity/Valeurs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/AuditM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/AuditM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/payload/request/LoginResquest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/payload/request/LoginResquest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/PersonneServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/PersonneServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/PersonneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/repository/PersonneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ChampM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/ChampM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/SectionM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/modele/SectionM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/payload/request/LoginResquest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/payload/response/JwtResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/metier/payload/response/MessageResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/AuditServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/AuditServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/audit/app/physique/WebSecurityJwtApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +190,8 @@
     <MESSAGE value="MaJ de la classe Beer pour AI dans la bdd.&#10;En attente des autres entités..." />
     <MESSAGE value="Ajout du JPA des classes ;)" />
     <MESSAGE value="jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="jwt" />
+    <MESSAGE value="Ajout Audit fonctionnel &amp; confirmée" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout Audit fonctionnel &amp; confirmée" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpringWithJsf$LaunchApp.ic" NAME="LaunchApp Coverage Results" MODIFIED="1620519078035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
