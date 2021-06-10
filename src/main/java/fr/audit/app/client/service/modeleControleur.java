@@ -30,7 +30,7 @@ public class modeleControleur {
         }
     }
 
-    @GetMapping("/Modele/Count")
+    @GetMapping("/Count")
     public ResponseEntity<Integer> getCountModele() {
         try {
             Integer count = 0;

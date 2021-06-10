@@ -1,6 +1,7 @@
 package fr.audit.app.client.service;
 
 import fr.audit.app.metier.entity.Audit;
+import fr.audit.app.metier.entity.Modele;
 import fr.audit.app.metier.modele.AuditM;
 import fr.audit.app.physique.repository.AuditRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,7 @@ public class AuditControleur {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
+
     @GetMapping("/")
     public ResponseEntity<List<AuditM>> getAllAudit(){
         try{
@@ -50,6 +52,22 @@ public class AuditControleur {
         }
 
     }
+
+    @GetMapping("/Count")
+    public ResponseEntity<Integer> getCountModele() {
+        try {
+            Integer count = 0;
+            Iterable<Audit> audit = auditRepository.findAll();
+            for (Audit modele : audit) {
+                count++;
+            }
+            return new ResponseEntity<>(count, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+
     @PostMapping("/")
     public ResponseEntity<AuditM> createAudit(@RequestBody AuditM audit){
         try {

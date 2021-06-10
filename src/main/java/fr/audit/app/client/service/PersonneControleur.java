@@ -54,7 +54,7 @@ public class PersonneControleur {
        }
     }
 
-    @GetMapping("/{login}")
+    @GetMapping("/getByLogin/{login}")
     public ResponseEntity<Personne>getByLogin(@PathVariable String login) {
        Optional<Personne> p = personneRepository.getByLogin(login);
        if(p.isPresent()){

@@ -1,6 +1,9 @@
 package fr.audit.app.metier.modele;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import fr.audit.app.metier.entity.*;
+
+import javax.persistence.Transient;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -10,7 +13,7 @@ import java.util.Objects;
  *
  * @author bob
  */
-public class AuditM {
+public class AuditM{
 
     private long id;
     private Agent agent;
@@ -19,6 +22,11 @@ public class AuditM {
     private Date date;
     private ModeleM modele;
     private String title;
+
+    @JsonProperty("class")
+    @Transient
+    final String clazz = this.getClass().getCanonicalName();
+
 
     public AuditM() { //To change body of generated methods, choose Tools | Templates.
     }
@@ -187,7 +195,8 @@ public class AuditM {
         a.setId(id);
         a.setAgent(this.agent);
         a.setAuditeurs(this.auditeurs);
-        a.setDate(this.date);
+        Date d = new Date();
+        a.setDate(d);
 
         a.setPoste(this.poste);
         a.setTitre(this.title);
